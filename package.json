@@ -16,6 +16,7 @@
   },
   "type": "module",
   "dependencies": {
-    "canvas-confetti": "^1.9.2"
+    "canvas-confetti": "^1.9.2",
+    "typed.js": "^2.1.0"
   }
 }
