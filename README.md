@@ -1,9 +1,9 @@
-# 🎇 Personal Site
+# 🧢 Personal Site
 
 ## 📷 Screenshot
 
 _Soon_
 
-## 📝 Crafted
+## 📝 Author
 
-### 🧢 [Reza Rinaldi](https://github.com/rezarinaldi)
+### [Reza Rinaldi](https://github.com/rezarinaldi)
