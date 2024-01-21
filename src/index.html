@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
   </head>
   <body class="flex flex-col justify-between bg-green-100 desktop:h-screen">
     <!-- Header -->
-    <header class="flex justify-between items-center p-4">
+    <header id="navbar" class="flex justify-between items-center p-4">
       <a
         href="#"
         class="text-2xl font-extrabold bg-gradient-to-tl from-green-600 to-emerald-300 bg-clip-text text-transparent"
@@ -21,15 +21,155 @@
       >
         <a href="#" class="link linkActive">All</a>
         <a href="#about" class="link">About</a>
-        <a href="#social" class="link">Social</a>
-        <a href="#subscribe" class="link">Subscribe</a>
+        <a href="#social-1" class="link">Social</a>
+        <a href="#queueCollab" class="link">Collab</a>
       </nav>
       <a
         href="mailto:rez4rinaldi@gmail.com"
-        class="font-bold py-2 px-6 rounded-full bg-white text-emerald-800 hover:bg-green-900 hover:text-white transition duration-300 cursor-pointer tablet:block desktop:block"
+        class="font-bold rounded-full text-emerald-800 hover:text-emerald-300 transition duration-300 cursor-pointer tablet:block desktop:block"
         >📧 Contact</a
       >
     </header>
+
+    <!-- Main -->
+    <main
+      class="max-w-[1200px] m-auto grid grid-cols-1 p-6 tablet:grid-cols-2 desktop:grid-cols-4 desktop:flex-col gap-6"
+    >
+      <!-- About -->
+      <div
+        id="about"
+        class="card group py-9 px-[42px] col-span-3 gap-2 relative flex flex-col tablet:col-span-1 desktop:col-span-2 desktop:h-fit"
+      >
+        <!-- Work -->
+        <div
+          class="absolute right-4 top-4 flex items-center py-2 px-[14px] rounded-xl border border-emerald-300 max-w-fit max-h-fit gap-2 bg-green-50 font-bold text-sm text-emerald-500 from-transparent to-white/30 from-[-90%] to-[70%] tracking-wide"
+        >
+          <div class="w-2 h-2 animate-pulse bg-green-500 rounded-full"></div>
+          #OpentoWork
+        </div>
+        <!-- Photo -->
+        <div
+          class="bg-[url('../rezar.png')] bg-center bg-cover w-[97px] h-[97px] group-hover:opacity-0 transition duration-300 ease-in-out"
+        ></div>
+        <div
+          class="absolute top-7 bg-center bg-cover w-[97px] h-[97px] bg-[url('../rezar_photo.png')] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+        ></div>
+        <!-- Text -->
+        <div class="flex flex-col">
+          <div class="font-bold text-neutral-950 text-2xl">
+            <span id="textTyped"></span>
+          </div>
+          <p class="text-body-costum text-neutral-700">
+            🎓 Fresh Graduate from State Polytechnic of Malang
+          </p>
+          <p class="text-body-costum text-neutral-700">
+            🔧 I'm interested in being a Front-End Developer
+          </p>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div
+        id="social-1"
+        class="card bg-green-800 flex justify-center items-center relative group min-h-[323px] col-span-3 tablet:col-span-1 desktop:min-h-[283px]"
+      >
+        <a
+          href="https://instagram.com/rez4rinaldi"
+          target="_blank"
+          class="bg-white w-9 h-9 group-hover:w-[100px] transition-all duration-300 px-[10px] py-[6px] absolute bottom-4 left-4 rounded-full hover:ring-4 ring-[#E5E5E533] flex items-center z-10 hover:transition-all"
+        >
+          <i
+            ><img
+              src="./arrow-up-right-from-square.svg"
+              width="16px"
+              height="16px"
+          /></i>
+          <span
+            class="text-xs absolute left-6 -translate-x-10 group-hover:translate-x-0 opacity-0 group-hover:opacity-100 leading-[12px] ml-2 transition-all"
+            >Instagram</span
+          >
+        </a>
+        <img
+          src="./instagram.svg"
+          alt="instagram"
+          width="250px"
+          height="250px"
+        />
+      </div>
+
+      <!-- GitHub -->
+      <div
+        id="social-2"
+        class="card bg-green-800 flex justify-center items-center relative group min-h-[323px] col-span-3 tablet:col-span-1 desktop:min-h-[283px]"
+      >
+        <a
+          href="https://github.com/rezarinaldi"
+          target="_blank"
+          class="bg-white w-9 h-9 group-hover:w-[80px] transition-all duration-300 px-[10px] py-[6px] absolute bottom-4 left-4 rounded-full hover:ring-4 ring-[#E5E5E533] flex items-center z-10 hover:transition-all"
+        >
+          <i
+            ><img
+              src="./arrow-up-right-from-square.svg"
+              width="16px"
+              height="16px"
+          /></i>
+          <span
+            class="text-xs absolute left-6 -translate-x-10 group-hover:translate-x-0 opacity-0 group-hover:opacity-100 leading-[12px] ml-2 transition-all"
+            >GitHub</span
+          >
+        </a>
+        <img src="./github.svg" alt="github" width="150px" height="150px" />
+      </div>
+
+      <!-- Collab -->
+      <div
+        id="queueCollab"
+        class="card flex flex-col gap-3 p-[31px] min-h-[323px] col-span-3 justify-center desktop:min-h-[283px] desktop:col-span-2"
+      >
+        <h3 class="text-neutral-950 font-black text-2xl">
+          Still pushing for collaboration?
+        </h3>
+        <p class="text-body-costum text-neutral-700">
+          Sure, if you're still interested in collaborating with me, you can
+          fill out the email form, and you'll receive a queue number.
+        </p>
+        <input
+          id="queue"
+          type="email"
+          placeholder="Enter your email."
+          class="inline-block w-full mb-3"
+        />
+        <div
+          class="flex flex-col justify-between items-center gap-4 tablet:gap-0 desktop:gap-0 tablet:flex-row"
+        >
+          <a
+            id="btnQueue"
+            class="bg-white px-[10px] py-[6px] border border-neutral-200 rounded-full hover:ring-4 ring-[#E5E5E533] flex items-center cursor-pointer hover:transition-all w-full justify-center tablet:w-fit"
+          >
+            <i><img src="./arrow-up-right.svg" width="16px" height="16px" /></i>
+            <span class="text-xs leading-[12px] ml-2">Take queue</span>
+          </a>
+          <div class="flex flex-row gap-1 align-baseline">
+            <span id="textRemove" class="text-base"
+              >You will get a queue number here.</span
+            >
+            <span id="queueNumber" class="text-base"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full py-4">
+      <p class="text-center font-bold">
+        Crafted with 💚. Design inspired by
+        <a
+          class="hover:text-emerald-800 hover:underline underline-offset-4"
+          href="https://nevflynn.com"
+          target="_blank"
+          >nevflynn.</a
+        >
+      </p>
+    </footer>
 
     <script type="module" src="js/main.js"></script>
   </body>
