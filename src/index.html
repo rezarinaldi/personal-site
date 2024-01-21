@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styleGlobal.css" />
     <title>Reza Rinaldi</title>
   </head>
-  <body class="flex flex-col justify-between bg-green-100 desktop:h-screen">
+  <body class="flex flex-col justify-between bg-green-100 h-screen">
     <!-- Header -->
     <header id="navbar" class="flex justify-between items-center p-4">
       <a
@@ -38,7 +38,7 @@
       <!-- About -->
       <div
         id="about"
-        class="card group py-9 px-[42px] col-span-1 gap-2 justify-between flex flex-col lg:col-span-1 desktop:h-fit"
+        class="card group py-9 px-[42px] col-span-1 gap-2 relative flex flex-col lg:col-span-1 desktop:h-fit"
       >
         <!-- Work -->
         <div
@@ -55,14 +55,14 @@
           class="absolute top-7 bg-center bg-cover w-[97px] h-[97px] bg-[url('/public/rezar_photo.png')] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
         ></div>
         <!-- Text -->
-        <div class="flex flex-col">
+        <div class="flex flex-col my-[30px]">
           <div class="font-bold text-neutral-950 text-2xl">
             <span id="textTyped"></span>
           </div>
-          <p class="text-body-costum text-neutral-700">
+          <p class="text-neutral-700">
             🎓 Fresh Graduate from State Polytechnic of Malang
           </p>
-          <p class="text-body-costum text-neutral-700">
+          <p class="text-neutral-700">
             🔧 I'm interested in being a Front-End Developer
           </p>
         </div>
@@ -138,16 +138,17 @@
           type="email"
           placeholder="Enter your email."
           class="inline-block w-full mb-3"
+          autocomplete="off"
         />
         <div
           class="flex flex-col justify-between items-center gap-4 tablet:gap-0 desktop:gap-0 tablet:flex-row"
         >
           <a
             id="btnQueue"
-            class="bg-white px-[10px] py-[6px] border border-neutral-200 rounded-full hover:ring-4 ring-[#E5E5E533] flex items-center cursor-pointer hover:transition-all w-full justify-center tablet:w-fit"
+            class="bg-white px-[10px] py-[6px] border border-neutral-200 rounded-full hover:ring-4 ring-emerald-100 flex items-center cursor-pointer hover:transition-all w-full justify-center tablet:w-fit"
           >
             <i><img src="./arrow-up-right.svg" width="16px" height="16px" /></i>
-            <span class="text-xs leading-[12px] ml-2">Take queue</span>
+            <span class="text-sm leading-[12px] ml-2">Take queue 🎉</span>
           </a>
           <div class="flex flex-row gap-1 align-baseline">
             <span id="textRemove" class="text-base"

@@ -70,7 +70,7 @@ const action = () => {
     queueNumber.textContent = `Your input still empty. 😥`;
     textRemove.remove();
   } else {
-    queueNumber.textContent = `Make sure your email correct. 🤨`;
+    queueNumber.textContent = `Make sure your email correct. 😬`;
     textRemove.remove();
   }
 };

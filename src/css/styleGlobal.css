@@ -472,7 +472,7 @@ input {
 
 input:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(30 41 59 / var(--tw-border-opacity));
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -697,6 +697,11 @@ input:focus {
   margin: auto;
 }
 
+.my-\[30px\] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -727,6 +732,10 @@ input:focus {
 
 .h-\[97px\] {
   height: 97px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-fit {
@@ -1087,6 +1096,11 @@ input:focus {
 
 .ring-\[\#E5E5E533\] {
   --tw-ring-color: #E5E5E533;
+}
+
+.ring-emerald-100 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(209 250 229 / var(--tw-ring-opacity));
 }
 
 .blur-sm {
