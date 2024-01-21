@@ -3,23 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./rezar.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/styleGlobal.css" />
-    <title>Personal Site | Reza Rinaldi</title>
+    <title>Reza Rinaldi</title>
   </head>
-  <body>
+  <body class="flex flex-col justify-between bg-green-100 desktop:h-screen">
+    <!-- Header -->
     <header class="flex justify-between items-center p-4">
-      <div
-        class="text-2xl font-bold bg-green-700 bg-clip-text text-transparent"
+      <a
+        href="#"
+        class="text-2xl font-extrabold bg-gradient-to-tl from-green-600 to-emerald-300 bg-clip-text text-transparent"
       >
-        Rezar.
-      </div>
-      <nav class="flex gap-4 bg-slate-200 px-6 py-2 rounded-full">
-        <div>About</div>
-        <div>Skill</div>
-        <div>Portfolio</div>
+        Reza.
+      </a>
+      <nav
+        class="p-[5px] bg-white rounded-full flex from-transparent to-white/30 from-[0%] to-[1000%]"
+      >
+        <a href="#" class="link linkActive">All</a>
+        <a href="#about" class="link">About</a>
+        <a href="#social" class="link">Social</a>
+        <a href="#subscribe" class="link">Subscribe</a>
       </nav>
-      <div>Contact</div>
+      <a
+        href="mailto:rez4rinaldi@gmail.com"
+        class="font-bold py-2 px-6 rounded-full bg-white text-emerald-800 hover:bg-green-900 hover:text-white transition duration-300 cursor-pointer tablet:block desktop:block"
+        >📧 Contact</a
+      >
     </header>
+
     <script type="module" src="js/main.js"></script>
   </body>
 </html>

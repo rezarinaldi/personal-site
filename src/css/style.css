@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@layer base {
+  body {
+    @apply font-display;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+}
+
+@layer components {
+  .link {
+    @apply bg-white py-[6px] px-4 rounded-full text-emerald-800 text-sm font-bold hover:bg-neutral-100 cursor-pointer;
+  }
+  .linkActive {
+    @apply bg-green-800 hover:bg-green-900 py-[6px] px-4 rounded-full text-white text-sm font-bold cursor-pointer from-transparent to-white/30 from-[100%] to-[70%];
+  }
+}
