@@ -888,12 +888,12 @@ input:focus {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/rezar\.png\'\)\] {
-  background-image: url('../rezar.png');
+.bg-\[url\(\'\/public\/rezar\.png\'\)\] {
+  background-image: url('/public/rezar.png');
 }
 
-.bg-\[url\(\'\.\.\/rezar_photo\.png\'\)\] {
-  background-image: url('../rezar_photo.png');
+.bg-\[url\(\'\/public\/rezar_photo\.png\'\)\] {
+  background-image: url('/public/rezar_photo.png');
 }
 
 .bg-gradient-to-tl {
