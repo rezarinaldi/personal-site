@@ -2,6 +2,13 @@
 export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      sm: "800px",
+
+      tablet: "801px",
+
+      desktop: "1200px",
+    },
     extend: {
       fontFamily: {
         display: ["Inter", "sans-serif"],
@@ -15,11 +22,6 @@ export default {
             fontWeight: "500",
           },
         ],
-      },
-      transitionProperty: {
-        width: "width",
-        height: "height",
-        spacing: "margin, padding",
       },
     },
   },
