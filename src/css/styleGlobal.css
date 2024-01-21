@@ -601,13 +601,6 @@ input:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  .card {
-    --tw-drop-shadow: drop-shadow(0 0 #0000);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-}
-
 .link {
   cursor: pointer;
   border-radius: 9999px;
@@ -696,8 +689,8 @@ input:focus {
   z-index: 10;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .m-auto {
@@ -1168,4 +1161,14 @@ input:focus {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
 }

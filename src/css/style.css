@@ -21,7 +21,7 @@
 
 @layer components {
   .card {
-    @apply bg-white rounded-3xl p-10 drop-shadow-sm hover:drop-shadow-lg dark:drop-shadow-none transition duration-150 ease-out hover:ease-in hover:scale-[1.03];
+    @apply bg-white rounded-3xl p-10 drop-shadow-sm hover:drop-shadow-lg transition duration-150 ease-out hover:ease-in hover:scale-[1.03];
   }
   .link {
     @apply bg-white py-[6px] px-4 rounded-full text-emerald-800 text-sm font-bold hover:bg-neutral-100 cursor-pointer;
