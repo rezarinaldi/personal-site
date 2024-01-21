@@ -1,8 +1,10 @@
 # 🧢 Personal Site
 
+> Ini personal website saya. 😬
+
 ## 📷 Screenshot
 
-_Soon_
+![screenshot](./src/public/screenshot.png)
 
 ## 📝 Author
 
