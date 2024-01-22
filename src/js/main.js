@@ -63,7 +63,7 @@ const action = () => {
     myCanvas.remove();
 
     counter++;
-    queueNumber.textContent = `Your queue number is ${counter}.`;
+    queueNumber.textContent = `Your queue number is ${counter}. 🔥`;
     textRemove.remove();
     input.value = "";
   } else if (input.value === "") {
